@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    background: #0b68b9;
+    background-image:url("../images/fondo-celus.jpeg");
+    background-size:cover;
+}
+
+form{
+    background: none;
+}
+h1{
+    text-align: center;
+    padding: 35px 20px;
+    background: none;
+}
+.anio{
+padding-bottom: 10px;
+background: none;
+font-size: 17px;
+}
+.equipo{
+    background: none;
+    font-size: 17px;
+}
+.tipoDeSeguro{
+    background: none;
+    font-size: 17px;
+}
+.casoEvento{
+    background: none;
+    font-size: 17px;
+}
+.botton{
+    background: none;
+    font-size: 17px;
+}
+.seguroCuerpo {
+    text-align: center;
+    padding: 20px 400px;
+    background: none;
+}
+.boton{
+    margin-top:25px;
+}
+
+.error {
+    background-color: #FBE9E7;
+    border: 1px solid #F4511E;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #F4511E;
+}
+.correcto {
+    background-color: rgb(211, 249, 187);
+    border: 1px solid rgb(50, 167, 0);
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(4, 150, 50);
+}
+
+.resumen {
+    font-size: 25px;
+    color: #840d0d;
+    border-radius: 9px;
+    border-style: dashed;
+    background: none;
+}
+
+p{
+    background:none;
+}
+
+.resultado-container {
+    background: url("../images/fondo-celus.jpeg") no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+
+
+.mx-auto{
+    background:#1f94fa;
+    color:black;
+    text-decoration-color:black;
+}
