@@ -105,3 +105,45 @@ p{
     text-decoration-color:black;
     text-shadow: 1px 1px 2px black;
 }
+footer {
+    /* background: #669fd1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ajusta el margen superior según tu preferencia */
+    margin-bottom: 20px;
+    opacity:0.80/* Ajusta el margen inferior según tu preferencia */
+}
+.tablaDeDatos{
+ background:none;
+text-align:center;
+}
+table{
+    background:none;
+    text-align: center;
+}
+th{
+    background:none
+}
+tbody{
+    background:none
+}
+tr{
+    background:none;
+}
+
+footer p {
+    text-shadow: 1px 1px 2px black;
+    color: #267fcc;
+}
+.tablaInterna td {
+    color: #267fcc;
+    font-style: italic;
+    text-shadow: 1px 1px 2px black;
+    background: none !important;
+    text-align:center;
+    border: 1px solid #000; 
+    border-top: 2px solid #0f0f0f;
+    border-bottom: 2px double #0a0a0a;
+
+}
