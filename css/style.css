@@ -26,19 +26,26 @@ h1{
 padding-bottom: 10px;
 background: none;
 font-size: 17px;
+text-align: center;
 }
 .equipo{
     background: none;
     font-size: 17px;
+    text-align: center;
 }
 .tipoDeSeguro{
     background: none;
     font-size: 17px;
+    text-align: center;
 }
 .casoEvento{
     background: none;
     font-size: 17px;
+    text-align: center;
 }
+.form-select{
+    text-align:center   
+   }
 .botton{
     background: none;
     font-size: 17px;
@@ -91,8 +98,6 @@ p{
     background-size: cover;
     padding: 20px;
 }
-
-
 
 .mx-auto{
     background:#267fcc;

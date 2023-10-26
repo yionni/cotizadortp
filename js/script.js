@@ -5,9 +5,10 @@ function Seguro(anio, equipo, tipoDeSeguro, casoEvento) {
     this.casoEvento = casoEvento;
 }
 
-//realizar cotizacion del seguro con los datos
+//realizaremos cotizacion del seguro con los datos
 Seguro.prototype.cotizarSeguro = function(){
-    
+
+    // leer equipo
     const equipo = parseFloat(document.querySelector('#equipo').value);
 
     // Leer año
@@ -26,9 +27,12 @@ Seguro.prototype.cotizarSeguro = function(){
     return resultado;
 
 }
+
+// funcion para utilizar con los prototypes
 function UI(){
 }
 
+//proto - function para mostrar mensaje de la resolucion de los campos
 UI.prototype.mostrarMensaje = function(mensaje, tipo){
 
     const div = document.createElement('div');
@@ -37,9 +41,7 @@ UI.prototype.mostrarMensaje = function(mensaje, tipo){
         div.classList.add('error')
     }else{
         div.classList.add('correcto');
-
         //insertamos en el HTML
-
     }
 
     div.classList.add('mensaje', 'mt-10')
@@ -53,6 +55,7 @@ UI.prototype.mostrarMensaje = function(mensaje, tipo){
     }, 3000);
 }
 
+//Mostrar resultado en el div emergente
 UI.prototype.mostrarResultado = async (totalPesos,totalDolares,seguro) => {
     
     const {anio, casoEvento} = seguro
@@ -98,7 +101,7 @@ async function eventListeners(){
         //leer evento sobre el equipo
         const casoEvento = document.querySelector('#casoEvento').value;
 
-        if(equipo === '' || anio === '' || tipoDeSeguro === '' || casoEvento === ''){
+        if(equipo === '' || anio === '' || tipoDeSeguro === '' || casoEvento === '' || (isNaN(equipo) || isNaN(anio) || isNaN(tipoDeSeguro) || isNaN(casoEvento) || anio === 0 || equipo === 0 || tipoDeSeguro === 0 || casoEvento === 0)){
             ui.mostrarMensaje('Todos los campos son obligatorios', 'error')
         }else{
             ui.mostrarMensaje('Cotizando', 'exito');
@@ -113,6 +116,7 @@ async function eventListeners(){
             const seguro = new Seguro(equipo, anio, tipoDeSeguro, casoEvento);
             const totalPesos = seguro.cotizarSeguro()
             const totalDolares = await conversionDolares(totalPesos)
+
             setTimeout(() => { ui.mostrarResultado(totalPesos, totalDolares, seguro);
             }, 3000)
         }
