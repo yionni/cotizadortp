@@ -72,7 +72,7 @@ UI.prototype.mostrarResultado = async (totalPesos,totalDolares,seguro) => {
                     <p class="font-bold">Equipo: ${equipo}<p>
                     <p class="font-bold">Tipo de seguro: ${tipoDeSeguro}<p>
                     <p class="font-bold">Total en pesos: $${totalPesos}<p>
-                    <p class="font-bold">Total en dolares: $${totalDolares}<p>
+                    <p class="font-bold">Total en dolares: $${totalDolares.toFixed(2)}<p>
                     `;
     
     const resultadoDiv = document.querySelector('#resultado')
